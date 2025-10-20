@@ -333,7 +333,7 @@ def build_interface() -> gr.Blocks:
                     ],
                 )
 
-        gr.Markdown("---\nBuilt for the Hiya AI Engineering assignment. Configure API keys via `.env`.")
+        gr.Markdown("---\n Hiya Hiya-Voice-Concierge")
 
     return demo
 
