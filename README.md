@@ -12,7 +12,18 @@ The goal of this project is to demonstrate how a **fully functional AI concierge
 
 ## Job to Be Done
 
-As a busy traveler balancing work and family, I want to confirm my upcoming flights and appointments, and trigger follow-ups using only my voice, so I can stay organized without opening multiple apps.
+Modern professionals and travelers often juggle multiple responsibilities — from business meetings and family events to travel logistics and health appointments. Managing all these tasks across different apps can be time-consuming and distracting.
+
+**Hiya Voice Concierge** solves this by enabling true multitasking through voice.
+
+With a single voice command, users can:
+- Check flight schedules and upcoming calendar events.
+- Send quick email or push notifications for follow-ups.
+- Get reminders about work or personal tasks.
+- Continue working hands-free while the assistant manages background actions.
+
+**Goal:**  
+Empower users to manage their day-to-day life — meetings, travel, and communication — through one intelligent, voice-controlled assistant that handles everything seamlessly.
 
 ---
 
