@@ -69,12 +69,9 @@ README.md                  # This file
 - **Evaluation hooks:** Conversation history, detected intents, and tool responses are stored in SQLite (`voice_assistant.db`). This enables offline scoring, success-rate tracking, and debugging during the live collaborative exercise.
 - **Extensibility:** Add new tools by registering another handler inside `_execute_intent`. Because intent parsing already returns structured `parameters`, wiring additional APIs (e.g., rebooking workflows) is straightforward.
 
-### Using AI Coding Assistants
-GitHub Copilot and ChatGPT (this agent) were leveraged to iterate quickly on boilerplate, but every generated snippet was reviewed and adapted—particularly around async orchestration, credential loading, and error messaging. The final integrations (Google Calendar, SendGrid, Pushover) were hand-tuned to satisfy the assignment’s fully-coded requirement.
 
 ### Next Steps
 1. Expand intent coverage (e.g., rebooking, loyalty point queries) with a tool registry.
 2. Add automated evaluation scripts that replay recorded utterances against the assistant and verify downstream actions.
 3. Layer in RAG over travel itineraries or email inboxes using vector search for richer memory.
 
-This foundation should make the in-person collaborative exercise smoother: the wiring is explicit, the integrations are real, and enhancements can focus on richer conversational behaviours. Enjoy testing it out!
