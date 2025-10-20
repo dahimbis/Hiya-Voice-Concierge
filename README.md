@@ -1,16 +1,32 @@
-## Hiya Voice Concierge
+# Hiya Voice Concierge
 
-**Job to be done:** As a frequent traveler juggling work and family commitments, I want to confirm what flights and appointments are coming up and trigger any follow-up tasks with a quick voice command, so that I can stay ahead of changes without opening multiple apps.
+In today’s fast-paced world, people often struggle to manage their schedules, meetings, and travel plans while juggling work and personal life. Most voice assistants only provide surface-level help — they can answer questions but rarely take meaningful action.
 
-This proof-of-concept demonstrates a secure, voice-first concierge that triages a user's spoken requests, checks the calendar for travel or healthcare commitments, and pushes proactive follow-ups through Pushover and SendGrid. It is built to support the collaborative coding exercise by keeping all orchestration logic inside the repository—no no-code tools, and every integration is wired through Python.
+**Hiya Voice Concierge** was designed to change that.
 
-### Key Capabilities
-- **End-to-end voice loop** using OpenAI Whisper (`whisper-1`) for speech-to-text and `gpt-4o-mini-tts` for text-to-speech. If an API key is not provided the assistant gracefully degrades and surfaces actionable errors.
-- **LLM orchestration** via `gpt-4o-mini` (configurable) to classify intents, extract structured parameters, and decide whether clarification is required before calling tools.
-- **Calendar tool-calling** backed by Google Calendar (service-account or delegated OAuth) to answer “upcoming flights/doctor visits” style questions. Results are synchronised into the local database for auditability.
-- **Notification fan-out** with first-class Pushover and SendGrid integrations so the assistant can nudge a traveler on mobile and send a follow-up email—credentials are loaded from environment variables.
-- **Secure multi-user persistence** using SQLite by default (drop-in replacement via `DATABASE_URL`) plus JWT-based authentication so dashboards and conversation history are scoped to the viewer.
-- **Conversation resilience** with contextual error messages, clarification prompts, and full logging to `output/audio/` for playback inside the Gradio UI.
+It is a **secure, intelligent, voice-first assistant** built entirely in Python. It listens, understands, and performs actions like checking your calendar, sending email reminders, or triggering push notifications — all through a single voice command.
+
+The goal of this project is to demonstrate how a **fully functional AI concierge** can be implemented end-to-end with modern APIs, agentic reasoning, and seamless voice integration
+
+---
+
+## Job to Be Done
+
+As a busy traveler balancing work and family, I want to confirm my upcoming flights and appointments, and trigger follow-ups using only my voice, so I can stay organized without opening multiple apps.
+
+---
+
+## Key Features
+
+- **Voice Interaction** — Converts speech to text using `whisper-1`, then responds using `gpt-4o-mini-tts` for natural voice output.  
+- **Intent Understanding** — Uses `gpt-4o-mini` to classify user intent and extract structured parameters for tool execution.  
+- **Calendar Integration** — Connects to Google Calendar (via service account or OAuth) to fetch flight, meeting, or appointment details.  
+- **Notifications** — Sends reminders via Pushover and emails through SendGrid.  
+- **Secure Multi-User Support** — Includes JWT authentication and SQLite persistence for each user’s data and history.  
+- **Error Resilience** — Provides detailed error feedback and stores all audio logs for traceability.  
+- **End-to-End Orchestration** — Built entirely in Python, with modular components for easy debugging and extension.
+
+---
 
 ### Repository Layout
 ```
@@ -67,11 +83,29 @@ README.md                  # This file
 - **Orchestration:** `VoicePersonalAssistant` coordinates the speech service, intent parser, and tool execution. Each intent handler returns both a human-readable response and machine-readable artefacts so downstream evaluation/analytics can plug in easily.
 - **Error handling:** Every integration raises descriptive runtime errors captured in the UI. For example, missing Google credentials trigger a helpful banner instead of silent failure.
 - **Evaluation hooks:** Conversation history, detected intents, and tool responses are stored in SQLite (`voice_assistant.db`). This enables offline scoring, success-rate tracking, and debugging during the live collaborative exercise.
-- **Extensibility:** Add new tools by registering another handler inside `_execute_intent`. Because intent parsing already returns structured `parameters`, wiring additional APIs (e.g., rebooking workflows) is straightforward.
 
 
-### Next Steps
-1. Expand intent coverage (e.g., rebooking, loyalty point queries) with a tool registry.
-2. Add automated evaluation scripts that replay recorded utterances against the assistant and verify downstream actions.
-3. Layer in RAG over travel itineraries or email inboxes using vector search for richer memory.
+## Next Steps
+
+- **Expand Intent Coverage**  
+  Add new intent categories such as travel bookings, weather updates, and health reminders to improve real-world usability.
+
+- **Introduce Automated Evaluation and RAG**  
+  Implement automated replay tests and Retrieval-Augmented Generation (RAG) for deeper contextual understanding and memory.
+
+- **Deployment Enhancements**  
+  Deploy the system to Hugging Face Spaces or Render with persistent database storage and OAuth-based user login.
+
+---
+
+## CrewAI Development Workflow
+
+This project was developed using a **CrewAI agentic workflow**, where each AI agent represented a specific engineering role within the development process:
+
+- **Engineering Lead** — Designed the backend architecture, defined class structure, and prepared the system design.  
+- **Backend Engineer** — Implemented the backend logic and integrations according to the design.  
+- **Frontend Engineer** — Built the Gradio-based user interface for end-to-end testing and demonstration.  
+- **Test Engineer** — Developed automated unit tests to validate backend functions and ensure reliability.
+
+This **modular, multi-agent development approach** ensured consistent quality, reduced human bottlenecks, and demonstrated the effectiveness of coordinated AI-driven engineering collaboration.
 
