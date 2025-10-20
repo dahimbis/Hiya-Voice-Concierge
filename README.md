@@ -117,3 +117,20 @@ This project was developed using a **CrewAI agentic workflow**, where each AI ag
 
 This **modular, multi-agent development approach** ensured consistent quality, reduced human bottlenecks, and demonstrated the effectiveness of coordinated AI-driven engineering collaboration.
 
+
+## Demo View
+
+Registration and Login Page
+![Login_page](1.png)
+
+Dashboard Page
+![Dashboard](2.png)
+
+Voice Assistant Page
+![Voice_Assistant_Page](3.png)
+
+Voice Processin 
+![Voice_Processing_Page](4.png)
+
+
+
