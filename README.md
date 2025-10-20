@@ -129,7 +129,7 @@ Dashboard Page
 Voice Assistant Page
 ![Voice_Assistant_Page](3.png)
 
-Voice Processin 
+Voice Processing
 ![Voice_Processing_Page](4.png)
 
 
