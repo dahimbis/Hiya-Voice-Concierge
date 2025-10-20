@@ -64,13 +64,10 @@ README.md                  # This file
    OPENAI_API_KEY=sk-...
    VOICE_AGENT_MODEL=gpt-4o-mini
 
-    # Google Calendar (choose one of the following approaches)
-   GOOGLE_SERVICE_ACCOUNT_FILE=path/to/service-account.json
-   GOOGLE_CALENDAR_ID=primary
-   GOOGLE_CALENDAR_DELEGATED_USER=your.email@domain.com
-   # or embed the JSON:
-   # GOOGLE_SERVICE_ACCOUNT_JSON={"type": "...", ...}
-
+    # Google Calendar 
+   GOOGLE_CALENDAR_CLIENT_ID= PUT_YOUR_ID_HERE
+   GOOGLE_CALENDAR_CLIENT_SECRET= ENTER_YOUR_SECRET_KEY
+   
    # Notifications
    PUSHOVER_APP_TOKEN=...
    PUSHOVER_USER_KEY=...
