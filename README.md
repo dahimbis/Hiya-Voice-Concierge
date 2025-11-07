@@ -6,7 +6,7 @@ In today’s fast-paced world, people often struggle to manage their schedules, 
 
 It is a **secure, intelligent, voice-first assistant** built entirely in Python. It listens, understands, and performs actions like checking your calendar, sending email reminders, or triggering push notifications, all through a single voice command.
 
-The goal of this project is to demonstrate how a **fully functional AI concierge** can be implemented end-to-end with modern APIs, agentic reasoning, and seamless voice integration
+The project demonstrates how a **fully functional AI concierge** can be implemented end-to-end with modern APIs, agentic reasoning, and seamless voice integration
 
 ---
 
@@ -18,12 +18,12 @@ Modern professionals and travelers often juggle multiple responsibilities from b
 
 With a single voice command, users can:
 - Check flight schedules and upcoming calendar events.
-- Send quick email or push notifications for follow-ups.
+- Send quick emails or push notifications for follow-ups.
 - Get reminders about work or personal tasks.
 - Continue working hands-free while the assistant manages background actions.
 
 **Goal:**  
-Empower users to manage their day-to-day life, meetings, travel, and communication — through one intelligent, voice-controlled assistant that handles everything seamlessly.
+Empower users to manage their day-to-day life, meetings, travel, and communication through one intelligent, voice-controlled assistant that handles everything seamlessly.
 
 ---
 
