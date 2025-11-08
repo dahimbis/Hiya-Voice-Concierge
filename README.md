@@ -20,7 +20,7 @@ With a single voice command, users can:
 - Check flight schedules and upcoming calendar events.
 - Send quick emails or push notifications for follow-ups.
 - Get reminders about work or personal tasks.
-- Continue working hands-free while the assistant manages background actions.
+- Continue working hands-free while the assistant manages background actions and tasks.
 
 **Goal:**  
 Empower users to manage their day-to-day life, meetings, travel, and communication through one intelligent, voice-controlled assistant that handles everything seamlessly.
