@@ -1,4 +1,4 @@
-#The Voice Concierge
+## The Voice Concierge
 
 In today’s fast-paced world, people often struggle to manage their schedules, meetings, and travel plans while juggling work and personal life. Most voice assistants only provide surface-level help, they can answer questions but rarely take meaningful action.
 
@@ -16,7 +16,7 @@ Modern professionals and travelers often juggle multiple responsibilities from b
 
 **Hiya Voice Concierge** solves this by enabling true multitasking through voice.
 
-With a single voice command, users can:
+With a voice command, users can:
 - Check flight schedules and upcoming calendar events.
 - Send quick emails or push notifications for follow-ups.
 - Get reminders about work or personal tasks.
