@@ -14,7 +14,7 @@ The project demonstrates how a **fully functional AI concierge** can be implemen
 
 Modern professionals and travelers often juggle multiple responsibilities from business meetings and family events to travel logistics and health appointments. Managing all these tasks across different apps can be time-consuming and distracting.
 
-**Hiya Voice Concierge** solves this by enabling true multitasking through voice.
+**The Voice Concierge** solves this by enabling true multitasking through voice.
 
 With a voice command, users can:
 - Check flight schedules and upcoming calendar events.
