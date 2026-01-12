@@ -133,4 +133,4 @@ Voice Processing
 ![Voice_Processing_Page](4.png)
 
 
-Note: AI-assisted coding when used in this project
+The project demonstrates how you can use automated voice calling to solve basic problems.
