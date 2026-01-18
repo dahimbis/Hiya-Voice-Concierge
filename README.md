@@ -29,13 +29,13 @@ Empower users to manage their day-to-day life, meetings, travel, and communicati
 
 ## Key Features
 
-- **Voice Interaction** — Converts speech to text using `whisper-1`, then responds using `gpt-4o-mini-tts` for natural voice output.  
-- **Intent Understanding** — Uses `gpt-4o-mini` to classify user intent and extract structured parameters for tool execution.  
-- **Calendar Integration** — Connects to Google Calendar (via service account or OAuth) to fetch flight, meeting, or appointment details.  
-- **Notifications** — Sends reminders via Pushover and emails through SendGrid.  
-- **Secure Multi-User Support** — Includes JWT authentication and SQLite persistence for each user’s data and history.  
-- **Error Resilience** — Provides detailed error feedback and stores all audio logs for traceability.  
-- **End-to-End Orchestration** — Built entirely in Python, with modular components for easy debugging and extension.
+- **Voice Interaction** - Converts speech to text using `whisper-1`, then responds using `gpt-4o-mini-tts` for natural voice output.  
+- **Intent Understanding** - Uses `gpt-4o-mini` to classify user intent and extract structured parameters for tool execution.  
+- **Calendar Integration** - Connects to Google Calendar (via service account or OAuth) to fetch flight, meeting, or appointment details.  
+- **Notifications** - Sends reminders via Pushover and emails through SendGrid.  
+- **Secure Multi-User Support** - Includes JWT authentication and SQLite persistence for each user’s data and history.  
+- **Error Resilience** - Provides detailed error feedback and stores all audio logs for traceability.  
+- **End-to-End Orchestration** - Built entirely in Python, with modular components for easy debugging and extension.
 
 ---
 
